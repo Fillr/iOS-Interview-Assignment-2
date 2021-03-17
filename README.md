@@ -7,7 +7,7 @@
 There are some game assets provided below, but you can create your own assets.
 
 Requirements:
-1. Use UIKit or Swift UI; no game engine
+1. Use UIKit or Swift UI; no game engine or GameplayKit
 2. Use swift or objective c; no third paty library
 3. Object-oriented design, ideally use MVVM
 4. Business logic is separated from UI code, so it is easy to switch between UIKit and Swift UI if we want to
