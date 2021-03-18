@@ -1,6 +1,6 @@
 ### Take Home Assignemnt: Spaceship Game
 
-![Click to Download Gameplay Video](https://user-images.githubusercontent.com/1269263/111420286-0ca8a380-873f-11eb-940a-ba9b1061da3a.mp4)
+![Right Click to Download Gameplay Video](https://user-images.githubusercontent.com/1269263/111420286-0ca8a380-873f-11eb-940a-ba9b1061da3a.mp4)
 
 ![Gameplay Screenshot](https://user-images.githubusercontent.com/1269263/111424644-24cff100-8746-11eb-8840-e6e17f58a5e0.png)
 
