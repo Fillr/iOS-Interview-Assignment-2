@@ -31,7 +31,7 @@ Please follow the steps below, so if you can't finish all the steps, we can stil
 12. Feel free to add more features if you can finish all the above steps.
 
 Template Project:
-A template project is created to help you to get started under the folder `spaceship-template`.
+A template project is created to help you to get started under the folder `spaceship-template`. The project is using MVVM with RXSwift, and it already completed step 1 and 2. You don't have to use the template project if you think there is better way to do it.
 
 Assets:
 Player Spaceship:
