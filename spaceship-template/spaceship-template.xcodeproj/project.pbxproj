@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		114ACA062237C166888E5656 /* Pods_spaceship_template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A64747627036696DA5AE16 /* Pods_spaceship_template.framework */; };
+		CA05FB0651F620CADE2B9559 /* Pods_spaceship_templateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BB8A68CDABCD2FD826AE70 /* Pods_spaceship_templateTests.framework */; };
+		F60B49B326041D8D00CC1362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B49B226041D8D00CC1362 /* AppDelegate.swift */; };
+		F60B49B526041D8D00CC1362 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B49B426041D8D00CC1362 /* SceneDelegate.swift */; };
+		F60B49B726041D8D00CC1362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B49B626041D8D00CC1362 /* ViewController.swift */; };
+		F60B49BA26041D8D00CC1362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60B49B826041D8D00CC1362 /* Main.storyboard */; };
+		F60B49BC26041D9000CC1362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60B49BB26041D9000CC1362 /* Assets.xcassets */; };
+		F60B49BF26041D9000CC1362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60B49BD26041D9000CC1362 /* LaunchScreen.storyboard */; };
+		F60B49CA26041D9000CC1362 /* spaceship_templateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B49C926041D9000CC1362 /* spaceship_templateTests.swift */; };
+		F60B49D526041D9000CC1362 /* spaceship_templateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B49D426041D9000CC1362 /* spaceship_templateUITests.swift */; };
+		F60B49F726043A9500CC1362 /* GameLoopDisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B49F626043A9500CC1362 /* GameLoopDisplayLink.swift */; };
+		F60B49FC26043AB700CC1362 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B49FB26043AB700CC1362 /* GameViewModel.swift */; };
+		F60B4A0126043ABF00CC1362 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B4A0026043ABF00CC1362 /* GameView.swift */; };
+		F60B4A0626043AD000CC1362 /* SpaceshipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B4A0526043AD000CC1362 /* SpaceshipViewModel.swift */; };
+		F60B4A0B26043AD500CC1362 /* SpaceshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B4A0A26043AD500CC1362 /* SpaceshipView.swift */; };
+		F60B4A1D26043BCC00CC1362 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60B4A1C26043BCC00CC1362 /* Spaceship.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F60B49C626041D9000CC1362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F60B49A726041D8D00CC1362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60B49AE26041D8D00CC1362;
+			remoteInfo = "spaceship-template";
+		};
+		F60B49D126041D9000CC1362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F60B49A726041D8D00CC1362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F60B49AE26041D8D00CC1362;
+			remoteInfo = "spaceship-template";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		068B4FF5F2497EA0143BB9BB /* Pods-spaceship-template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceship-template.debug.xcconfig"; path = "Target Support Files/Pods-spaceship-template/Pods-spaceship-template.debug.xcconfig"; sourceTree = "<group>"; };
+		13A64747627036696DA5AE16 /* Pods_spaceship_template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spaceship_template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AC08E1AF735EF3611314E8 /* Pods-spaceship-template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceship-template.release.xcconfig"; path = "Target Support Files/Pods-spaceship-template/Pods-spaceship-template.release.xcconfig"; sourceTree = "<group>"; };
+		17AB1E13DA54F180C6EF5211 /* Pods-spaceship-templateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceship-templateTests.debug.xcconfig"; path = "Target Support Files/Pods-spaceship-templateTests/Pods-spaceship-templateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6BB8A68CDABCD2FD826AE70 /* Pods_spaceship_templateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spaceship_templateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60B49AF26041D8D00CC1362 /* spaceship-template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spaceship-template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60B49B226041D8D00CC1362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F60B49B426041D8D00CC1362 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F60B49B626041D8D00CC1362 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F60B49B926041D8D00CC1362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F60B49BB26041D9000CC1362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F60B49BE26041D9000CC1362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F60B49C026041D9000CC1362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60B49C526041D9000CC1362 /* spaceship-templateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spaceship-templateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60B49C926041D9000CC1362 /* spaceship_templateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceship_templateTests.swift; sourceTree = "<group>"; };
+		F60B49CB26041D9000CC1362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60B49D026041D9000CC1362 /* spaceship-templateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spaceship-templateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60B49D426041D9000CC1362 /* spaceship_templateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceship_templateUITests.swift; sourceTree = "<group>"; };
+		F60B49D626041D9000CC1362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60B49F626043A9500CC1362 /* GameLoopDisplayLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLoopDisplayLink.swift; sourceTree = "<group>"; };
+		F60B49FB26043AB700CC1362 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F60B4A0026043ABF00CC1362 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		F60B4A0526043AD000CC1362 /* SpaceshipViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceshipViewModel.swift; sourceTree = "<group>"; };
+		F60B4A0A26043AD500CC1362 /* SpaceshipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceshipView.swift; sourceTree = "<group>"; };
+		F60B4A1C26043BCC00CC1362 /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
+		FC69B47504047E066788ACBD /* Pods-spaceship-templateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spaceship-templateTests.release.xcconfig"; path = "Target Support Files/Pods-spaceship-templateTests/Pods-spaceship-templateTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F60B49AC26041D8D00CC1362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114ACA062237C166888E5656 /* Pods_spaceship_template.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60B49C226041D9000CC1362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA05FB0651F620CADE2B9559 /* Pods_spaceship_templateTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60B49CD26041D9000CC1362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A8778108BF6CFF0F9651038 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13A64747627036696DA5AE16 /* Pods_spaceship_template.framework */,
+				B6BB8A68CDABCD2FD826AE70 /* Pods_spaceship_templateTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C29C8841CA7E4375C3DFB70C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				068B4FF5F2497EA0143BB9BB /* Pods-spaceship-template.debug.xcconfig */,
+				14AC08E1AF735EF3611314E8 /* Pods-spaceship-template.release.xcconfig */,
+				17AB1E13DA54F180C6EF5211 /* Pods-spaceship-templateTests.debug.xcconfig */,
+				FC69B47504047E066788ACBD /* Pods-spaceship-templateTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F60B49A626041D8D00CC1362 = {
+			isa = PBXGroup;
+			children = (
+				F60B49B126041D8D00CC1362 /* spaceship-template */,
+				F60B49C826041D9000CC1362 /* spaceship-templateTests */,
+				F60B49D326041D9000CC1362 /* spaceship-templateUITests */,
+				F60B49B026041D8D00CC1362 /* Products */,
+				C29C8841CA7E4375C3DFB70C /* Pods */,
+				5A8778108BF6CFF0F9651038 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F60B49B026041D8D00CC1362 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F60B49AF26041D8D00CC1362 /* spaceship-template.app */,
+				F60B49C526041D9000CC1362 /* spaceship-templateTests.xctest */,
+				F60B49D026041D9000CC1362 /* spaceship-templateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F60B49B126041D8D00CC1362 /* spaceship-template */ = {
+			isa = PBXGroup;
+			children = (
+				F60B49B226041D8D00CC1362 /* AppDelegate.swift */,
+				F60B49B426041D8D00CC1362 /* SceneDelegate.swift */,
+				F60B49B626041D8D00CC1362 /* ViewController.swift */,
+				F60B49EF260436CC00CC1362 /* Domain */,
+				F60B49F2260438B500CC1362 /* Presentation */,
+				F60B49F5260438CC00CC1362 /* Data */,
+				F60B49B826041D8D00CC1362 /* Main.storyboard */,
+				F60B49BB26041D9000CC1362 /* Assets.xcassets */,
+				F60B49BD26041D9000CC1362 /* LaunchScreen.storyboard */,
+				F60B49C026041D9000CC1362 /* Info.plist */,
+			);
+			path = "spaceship-template";
+			sourceTree = "<group>";
+		};
+		F60B49C826041D9000CC1362 /* spaceship-templateTests */ = {
+			isa = PBXGroup;
+			children = (
+				F60B49C926041D9000CC1362 /* spaceship_templateTests.swift */,
+				F60B49CB26041D9000CC1362 /* Info.plist */,
+			);
+			path = "spaceship-templateTests";
+			sourceTree = "<group>";
+		};
+		F60B49D326041D9000CC1362 /* spaceship-templateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F60B49D426041D9000CC1362 /* spaceship_templateUITests.swift */,
+				F60B49D626041D9000CC1362 /* Info.plist */,
+			);
+			path = "spaceship-templateUITests";
+			sourceTree = "<group>";
+		};
+		F60B49EF260436CC00CC1362 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F60B49F02604386800CC1362 /* UseCases */,
+				F60B49F1260438A300CC1362 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F60B49F02604386800CC1362 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F60B49F1260438A300CC1362 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F60B4A1C26043BCC00CC1362 /* Spaceship.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F60B49F2260438B500CC1362 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F60B49F626043A9500CC1362 /* GameLoopDisplayLink.swift */,
+				F60B49F4260438C200CC1362 /* ViewModels */,
+				F60B49F3260438BC00CC1362 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F60B49F3260438BC00CC1362 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F60B4A0026043ABF00CC1362 /* GameView.swift */,
+				F60B4A0A26043AD500CC1362 /* SpaceshipView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F60B49F4260438C200CC1362 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F60B49FB26043AB700CC1362 /* GameViewModel.swift */,
+				F60B4A0526043AD000CC1362 /* SpaceshipViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F60B49F5260438CC00CC1362 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F60B49AE26041D8D00CC1362 /* spaceship-template */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60B49D926041D9000CC1362 /* Build configuration list for PBXNativeTarget "spaceship-template" */;
+			buildPhases = (
+				853FBF62B7E536D879B1CE12 /* [CP] Check Pods Manifest.lock */,
+				F60B49AB26041D8D00CC1362 /* Sources */,
+				F60B49AC26041D8D00CC1362 /* Frameworks */,
+				F60B49AD26041D8D00CC1362 /* Resources */,
+				11FCA135E7661374F6B4756E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "spaceship-template";
+			productName = "spaceship-template";
+			productReference = F60B49AF26041D8D00CC1362 /* spaceship-template.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F60B49C426041D9000CC1362 /* spaceship-templateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60B49DC26041D9000CC1362 /* Build configuration list for PBXNativeTarget "spaceship-templateTests" */;
+			buildPhases = (
+				BCEE64226F0B5D11F7F77976 /* [CP] Check Pods Manifest.lock */,
+				F60B49C126041D9000CC1362 /* Sources */,
+				F60B49C226041D9000CC1362 /* Frameworks */,
+				F60B49C326041D9000CC1362 /* Resources */,
+				7461151396BD1100C3120FFB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F60B49C726041D9000CC1362 /* PBXTargetDependency */,
+			);
+			name = "spaceship-templateTests";
+			productName = "spaceship-templateTests";
+			productReference = F60B49C526041D9000CC1362 /* spaceship-templateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F60B49CF26041D9000CC1362 /* spaceship-templateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60B49DF26041D9000CC1362 /* Build configuration list for PBXNativeTarget "spaceship-templateUITests" */;
+			buildPhases = (
+				F60B49CC26041D9000CC1362 /* Sources */,
+				F60B49CD26041D9000CC1362 /* Frameworks */,
+				F60B49CE26041D9000CC1362 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F60B49D226041D9000CC1362 /* PBXTargetDependency */,
+			);
+			name = "spaceship-templateUITests";
+			productName = "spaceship-templateUITests";
+			productReference = F60B49D026041D9000CC1362 /* spaceship-templateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F60B49A726041D8D00CC1362 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F60B49AE26041D8D00CC1362 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F60B49C426041D9000CC1362 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F60B49AE26041D8D00CC1362;
+					};
+					F60B49CF26041D9000CC1362 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F60B49AE26041D8D00CC1362;
+					};
+				};
+			};
+			buildConfigurationList = F60B49AA26041D8D00CC1362 /* Build configuration list for PBXProject "spaceship-template" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F60B49A626041D8D00CC1362;
+			productRefGroup = F60B49B026041D8D00CC1362 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F60B49AE26041D8D00CC1362 /* spaceship-template */,
+				F60B49C426041D9000CC1362 /* spaceship-templateTests */,
+				F60B49CF26041D9000CC1362 /* spaceship-templateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F60B49AD26041D8D00CC1362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60B49BF26041D9000CC1362 /* LaunchScreen.storyboard in Resources */,
+				F60B49BC26041D9000CC1362 /* Assets.xcassets in Resources */,
+				F60B49BA26041D8D00CC1362 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60B49C326041D9000CC1362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60B49CE26041D9000CC1362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11FCA135E7661374F6B4756E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spaceship-template/Pods-spaceship-template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spaceship-template/Pods-spaceship-template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spaceship-template/Pods-spaceship-template-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7461151396BD1100C3120FFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spaceship-templateTests/Pods-spaceship-templateTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spaceship-templateTests/Pods-spaceship-templateTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spaceship-templateTests/Pods-spaceship-templateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853FBF62B7E536D879B1CE12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-spaceship-template-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCEE64226F0B5D11F7F77976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-spaceship-templateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F60B49AB26041D8D00CC1362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60B4A1D26043BCC00CC1362 /* Spaceship.swift in Sources */,
+				F60B49F726043A9500CC1362 /* GameLoopDisplayLink.swift in Sources */,
+				F60B4A0B26043AD500CC1362 /* SpaceshipView.swift in Sources */,
+				F60B49B726041D8D00CC1362 /* ViewController.swift in Sources */,
+				F60B49B326041D8D00CC1362 /* AppDelegate.swift in Sources */,
+				F60B49FC26043AB700CC1362 /* GameViewModel.swift in Sources */,
+				F60B4A0126043ABF00CC1362 /* GameView.swift in Sources */,
+				F60B49B526041D8D00CC1362 /* SceneDelegate.swift in Sources */,
+				F60B4A0626043AD000CC1362 /* SpaceshipViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60B49C126041D9000CC1362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60B49CA26041D9000CC1362 /* spaceship_templateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60B49CC26041D9000CC1362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60B49D526041D9000CC1362 /* spaceship_templateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F60B49C726041D9000CC1362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F60B49AE26041D8D00CC1362 /* spaceship-template */;
+			targetProxy = F60B49C626041D9000CC1362 /* PBXContainerItemProxy */;
+		};
+		F60B49D226041D9000CC1362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F60B49AE26041D8D00CC1362 /* spaceship-template */;
+			targetProxy = F60B49D126041D9000CC1362 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F60B49B826041D8D00CC1362 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F60B49B926041D8D00CC1362 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F60B49BD26041D9000CC1362 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F60B49BE26041D9000CC1362 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F60B49D726041D9000CC1362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F60B49D826041D9000CC1362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F60B49DA26041D9000CC1362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068B4FF5F2497EA0143BB9BB /* Pods-spaceship-template.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "spaceship-template/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fillr.spaceship-template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F60B49DB26041D9000CC1362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AC08E1AF735EF3611314E8 /* Pods-spaceship-template.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "spaceship-template/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fillr.spaceship-template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F60B49DD26041D9000CC1362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17AB1E13DA54F180C6EF5211 /* Pods-spaceship-templateTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "spaceship-templateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fillr.spaceship-templateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spaceship-template.app/spaceship-template";
+			};
+			name = Debug;
+		};
+		F60B49DE26041D9000CC1362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC69B47504047E066788ACBD /* Pods-spaceship-templateTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "spaceship-templateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fillr.spaceship-templateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/spaceship-template.app/spaceship-template";
+			};
+			name = Release;
+		};
+		F60B49E026041D9000CC1362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "spaceship-templateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fillr.spaceship-templateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "spaceship-template";
+			};
+			name = Debug;
+		};
+		F60B49E126041D9000CC1362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "spaceship-templateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fillr.spaceship-templateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "spaceship-template";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F60B49AA26041D8D00CC1362 /* Build configuration list for PBXProject "spaceship-template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60B49D726041D9000CC1362 /* Debug */,
+				F60B49D826041D9000CC1362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60B49D926041D9000CC1362 /* Build configuration list for PBXNativeTarget "spaceship-template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60B49DA26041D9000CC1362 /* Debug */,
+				F60B49DB26041D9000CC1362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60B49DC26041D9000CC1362 /* Build configuration list for PBXNativeTarget "spaceship-templateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60B49DD26041D9000CC1362 /* Debug */,
+				F60B49DE26041D9000CC1362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60B49DF26041D9000CC1362 /* Build configuration list for PBXNativeTarget "spaceship-templateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60B49E026041D9000CC1362 /* Debug */,
+				F60B49E126041D9000CC1362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F60B49A726041D8D00CC1362 /* Project object */;
+}
