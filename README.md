@@ -7,28 +7,31 @@
 There are some game assets provided below, but you can create your own assets.
 
 Requirements:
-1. Use UIKit or Swift UI; no game engine or GameplayKit
-2. Use swift or objective c; no third party library
-3. Object-oriented design, ideally use MVVM
-4. Business logic is separated from UI code, so it is easy to switch between UIKit and Swift UI if we want to
-5. The submitted solution can be compiled and run on the simulator
+1. Use UIKit or Swift UI; no game engine or GameplayKit.
+2. Use swift or objective c; no third party library.
+3. Object-oriented design, ideally use MVVM, but you can use any design that you think best fits this project.
+4. Business logic is separated from UI code, so it is easy to switch between UIKit and Swift UI if we want to.
+5. The submitted solution can be compiled and run on the simulator.
 6. Unit testing, particularly business logic is testable.
 7. Please commit the solution in a Git repo, then zip the repo and email it back.
 
 Specs:
 Please follow the steps below, so if you can't finish all the steps, we can still check how much you have done.
-1. Create a game loop that updates the UI at an interval
-2. Create a user-controlled spaceship, the ship moving around following the user touches
-3. The user spaceship fires lasers at an interval
-4. Create enemy spaceships moving from the top of the screen towards the bottom
-5. The enemy spaceship fires lasers at an interval as well
-6. Removing the references of the enemy spaceships and lasers after they move outside the screen boundary, so we don't run out of memory
-7. Collision detection: if the enemy spaceship collides with the user lasers, the laser will be destroyed, and the spaceship loses life, eventually destroyed
-8. Collision detection: if the user spaceship collides with the enemy lasers, the laser will be destroyed, and the spaceship loses life, eventually destroyed
-9. Collision detection: if the user spaceship collides with the enemy spaceship, the one that has less life will be destroyed
-10. The spaceship flashes when get hit
-11. Update user spaceship and scores (how many enemy spaceships destroyed) on the screen
-12. Feel free to add more features if you can finish all the above steps
+1. Create a game loop that updates the UI at an interval.
+2. Create a user-controlled spaceship, the ship moving around following the user touches.
+3. The user spaceship fires lasers at an interval.
+4. Create enemy spaceships moving from the top of the screen towards the bottom.
+5. The enemy spaceship fires lasers at an interval as well.
+6. Removing the references of the enemy spaceships and lasers after they move outside the screen boundary, so we don't run out of memory.
+7. Collision detection: if the enemy spaceship collides with the user lasers, the laser will be destroyed, and the spaceship loses life, eventually destroyed.
+8. Collision detection: if the user spaceship collides with the enemy lasers, the laser will be destroyed, and the spaceship loses life, eventually destroyed.
+9. Collision detection: if the user spaceship collides with the enemy spaceship, the one that has less life will be destroyed.
+10. The spaceship flashes when gets hit.
+11. Update user spaceship and scores (how many enemy spaceships destroyed) on the screen.
+12. Feel free to add more features if you can finish all the above steps.
+
+Template Project:
+A template project is created to help you to get started under the folder `spaceship-template`.
 
 Assets:
 Player Spaceship:
